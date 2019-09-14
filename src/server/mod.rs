@@ -120,7 +120,7 @@ impl Snapshot {
         }
         let self_id = self.local_id.clone();
 
-        // Sorting messages using vector clocks to build a consistent message history 
+        // Sorting messages using vector clocks to build a consistent message history
         self.msg_history.sort_by(|a, b| {
             // First, we sort by local date (date of the snapshot requester)
             if a.clock.get(&self_id).unwrap() == b.clock.get(&self_id).unwrap() {

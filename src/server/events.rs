@@ -1,5 +1,5 @@
-use std::fs::File;
 use crate::app::AppId;
+use std::fs::File;
 use std::io::{BufRead, BufReader};
 use std::path::PathBuf;
 use std::sync::mpsc;
@@ -18,7 +18,7 @@ pub enum Event {
     GetClock,
     /// Snapshot request from the user
     GetSnapshot,
-    /// Timer used for snapshot building. When finished, 
+    /// Timer used for snapshot building. When finished,
     /// the server stops waiting for Snapshots from other apps,
     /// and writes the snapshot to file
     SnapshotTimeout,
