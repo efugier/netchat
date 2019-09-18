@@ -1,3 +1,6 @@
+[![Actions Status](https://github.com/efugier/netchat/workflows/Build/badge.svg)](https://github.com/efugier/netchat/workflows/Build)
+
+
 Netchat
 ===
 
